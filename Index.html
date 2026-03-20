@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Power BI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .proyecto {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .proyecto:hover {
+            transform: translateY(-5px);
+        }
+        
+        .proyecto-header {
+            background: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+        }
+        
+        .proyecto-header h2 {
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .proyecto-header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .proyecto-content {
+            padding: 1.5rem;
+        }
+        
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            border-radius: 8px;
+        }
+        
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .tecnologias {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #ecf0f1;
+            border-radius: 8px;
+        }
+        
+        .tecnologias span {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        .contacto a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contacto a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📊 Mi Portafolio Power BI</h1>
+        <p>Analista de Datos | Visualización | Business Intelligence</p>
+    </header>
+    
+    <div class="container">
+        <!-- PROYECTO 1 - REEMPLAZA CON TU ENLACE -->
+        <div class="proyecto">
+            <div class="proyecto-header">
+                <h2>📈 Proyecto 1: Análisis de Ventas</h2>
+                <p>Dashboard interactivo de ventas con KPIs, tendencias y proyecciones</p>
+            </div>
+            <div class="proyecto-content">
+                <div class="iframe-container">
+                    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiY2JkMDNkZWMtYTI0Ny00ZGYyLWJmYTQtYzUxN2MxNmFiNTU5IiwidCI6IjI1MGY3NmU3LTYxMDUtNDJlMy04MmQwLWJlN2M0NjBhZWE1OSIsImMiOjR9"></iframe>
+                </div>
+                <div class="tecnologias">
+                    <strong>🔧 Tecnologías utilizadas:</strong>
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Power Query</span>
+                    <span>SQL</span>
+                </div>
+                <div class="tecnologias">
+                    <strong>💡 Insights clave:</strong> Análisis de tendencias estacionales, top 5 productos más vendidos, proyección de ventas a 6 meses.
+                </div>
+            </div>
+        </div>
+        
+        <!-- PROYECTO 2 - REEMPLAZA CON TU ENLACE -->
+        <div class="proyecto">
+            <div class="proyecto-header">
+                <h2>👥 Proyecto 2: Análisis de RRHH</h2>
+                <p>Dashboard de rotación de personal, diversidad y satisfacción laboral</p>
+            </div>
+            <div class="proyecto-content">
+                <div class="iframe-container">
+                    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYjRmMGM1ZTktZGQ5MS00ZjM1LWIzZjMtNDg5MTA4YjQ5OWI4IiwidCI6IjI1MGY3NmU3LTYxMDUtNDJlMy04MmQwLWJlN2M0NjBhZWE1OSIsImMiOjR9"></iframe>
+                </div>
+                <div class="tecnologias">
+                    <strong>🔧 Tecnologías utilizadas:</strong>
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Power Query</span>
+                </div>
+                <div class="tecnologias">
+                    <strong>💡 Insights clave:</strong> Identificación de departamentos con mayor rotación, análisis de retención por antigüedad.
+                </div>
+            </div>
+        </div>
+    
+    <footer>
+        <div class="contacto">
+            <p>📧 <a href="mailto:tucorreo@hotmail.com">tucorreo@hotmail.com</a></p>
+            <p>🔗 <a href="https://www.linkedin.com/in/tuperfil/" target="_blank">LinkedIn</a> | 
+               <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
+            <p>📊 Portafolio Power BI | Todos los derechos reservados © 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

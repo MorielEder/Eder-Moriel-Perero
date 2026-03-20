@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Power BI</title>
+    <title>Eder Moriel | Portafolio Power BI</title>
     <style>
         * {
             margin: 0;
@@ -19,7 +19,7 @@
         }
         
         header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
+            background: linear-gradient(135deg, #1a472a, #2e7d32);
             color: white;
             text-align: center;
             padding: 3rem 1rem;
@@ -35,12 +35,61 @@
             opacity: 0.9;
         }
         
+        .skills-badge {
+            margin-top: 1rem;
+        }
+        
+        .skills-badge span {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.3rem;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
         
+        /* Sección Sobre Mí */
+        .sobre-mi {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .sobre-mi h2 {
+            color: #1a472a;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .info-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .card {
+            background: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+        
+        .card strong {
+            color: #1a472a;
+        }
+        
+        /* Proyectos */
         .proyecto {
             background: white;
             border-radius: 12px;
@@ -55,7 +104,7 @@
         }
         
         .proyecto-header {
-            background: #2c3e50;
+            background: #1a472a;
             color: white;
             padding: 1.5rem;
         }
@@ -77,7 +126,7 @@
         .iframe-container {
             position: relative;
             overflow: hidden;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 56.25%;
             border-radius: 8px;
         }
         
@@ -99,7 +148,7 @@
         
         .tecnologias span {
             display: inline-block;
-            background: #3498db;
+            background: #2e7d32;
             color: white;
             padding: 0.3rem 0.8rem;
             border-radius: 20px;
@@ -111,13 +160,13 @@
         footer {
             text-align: center;
             padding: 2rem;
-            background: #2c3e50;
+            background: #1a472a;
             color: white;
             margin-top: 2rem;
         }
         
         .contacto a {
-            color: #3498db;
+            color: #a5d6a5;
             text-decoration: none;
         }
         
@@ -133,17 +182,65 @@
             header h1 {
                 font-size: 1.8rem;
             }
+            
+            .sobre-mi h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>📊 Mi Portafolio Power BI</h1>
-        <p>Analista de Datos | Visualización | Business Intelligence</p>
+        <h1>📊 Eder Steven Moriel Perero</h1>
+        <p>Egresado de Sistemas de Información | Analista de Datos | Power BI</p>
+        <div class="skills-badge">
+            <span>📊 Power BI</span>
+            <span>🐍 Python</span>
+            <span>🗄️ SQL Server</span>
+            <span>📁 GitHub</span>
+            <span>🔄 Scrum/Kanban</span>
+            <span>📝 HTML/CSS</span>
+        </div>
     </header>
     
     <div class="container">
-        <!-- PROYECTO 1 - REEMPLAZA CON TU ENLACE -->
+        <!-- SECCIÓN SOBRE MÍ - PERSONALIZADA CON TU CV -->
+        <div class="sobre-mi">
+            <h2>👨‍💻 Sobre Mí</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                Soy <strong>Egresado de Sistemas de Información</strong> en la Universidad de Guayaquil, 
+                apasionado por el análisis de datos y la visualización con <strong>Power BI</strong>. 
+                Cuento con experiencia en creación de reportes durante mis prácticas en 
+                <strong>Sudamericana de Software (SASF)</strong> y en el registro de datos en la 
+                <strong>Dirección General de Aviación Civil (DAC)</strong>.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
+                Me especializo en transformar datos en insights accionables, combinando mis conocimientos 
+                en <strong>SQL, Python y metodologías ágiles</strong> para entregar soluciones que impulsen 
+                la toma de decisiones.
+            </p>
+            <div class="info-cards">
+                <div class="card">
+                    <strong>🎓 Formación</strong><br>
+                    Sistemas de Información<br>
+                    Universidad de Guayaquil
+                </div>
+                <div class="card">
+                    <strong>📍 Ubicación</strong><br>
+                    Guayaquil, Ecuador
+                </div>
+                <div class="card">
+                    <strong>📧 Contacto</strong><br>
+                    edermoriel@hotmail.com
+                </div>
+                <div class="card">
+                    <strong>📱 Teléfono</strong><br>
+                    0963156344
+                </div>
+            </div>
+        </div>
+        
+        <!-- PROYECTO 1: Análisis de Ventas -->
         <div class="proyecto">
             <div class="proyecto-header">
                 <h2>📈 Proyecto 1: Análisis de Ventas</h2>
@@ -158,15 +255,15 @@
                     <span>Power BI</span>
                     <span>DAX</span>
                     <span>Power Query</span>
-                    <span>SQL</span>
+                    <span>SQL Server</span>
                 </div>
                 <div class="tecnologias">
-                    <strong>💡 Insights clave:</strong> Análisis de tendencias estacionales, top 5 productos más vendidos, proyección de ventas a 6 meses.
+                    <strong>💡 Insights clave:</strong> Análisis de tendencias estacionales, top productos más vendidos, proyección de ventas.
                 </div>
             </div>
         </div>
         
-        <!-- PROYECTO 2 - REEMPLAZA CON TU ENLACE -->
+        <!-- PROYECTO 2: Análisis de RRHH -->
         <div class="proyecto">
             <div class="proyecto-header">
                 <h2>👥 Proyecto 2: Análisis de RRHH</h2>
@@ -187,13 +284,60 @@
                 </div>
             </div>
         </div>
+        
+        <!-- PROYECTO 3: Dashboard Financiero (Agregado para que completes) -->
+        <div class="proyecto">
+            <div class="proyecto-header">
+                <h2>💰 Proyecto 3: Dashboard Financiero</h2>
+                <p>Análisis de rentabilidad, márgenes y proyección de ingresos</p>
+            </div>
+            <div class="proyecto-content">
+                <div class="iframe-container">
+                    <iframe src="https://app.powerbi.com/view?r=REEMPLAZA_CON_TU_ENLACE_3"></iframe>
+                </div>
+                <div class="tecnologias">
+                    <strong>🔧 Tecnologías utilizadas:</strong>
+                    <span>Power BI</span>
+                    <span>DAX avanzado</span>
+                    <span>Time Intelligence</span>
+                </div>
+                <div class="tecnologias">
+                    <strong>💡 Insights clave:</strong> Análisis de rentabilidad por producto, forecast de ingresos, márgenes por categoría.
+                </div>
+            </div>
+        </div>
+        
+        <!-- PROYECTO 4: Gestión de Reportes SASF (Basado en tu experiencia) -->
+        <div class="proyecto">
+            <div class="proyecto-header">
+                <h2>📋 Proyecto 4: Gestión de Reportes - SASF</h2>
+                <p>Dashboard basado en experiencia en Sudamericana de Software (SASF)</p>
+            </div>
+            <div class="proyecto-content">
+                <div class="iframe-container">
+                    <iframe src="https://app.powerbi.com/view?r=REEMPLAZA_CON_TU_ENLACE_4"></iframe>
+                </div>
+                <div class="tecnologias">
+                    <strong>🔧 Tecnologías utilizadas:</strong>
+                    <span>Power BI</span>
+                    <span>SQL Server</span>
+                    <span>Power Query</span>
+                </div>
+                <div class="tecnologias">
+                    <strong>💡 Insights clave:</strong> Automatización de reportes, eficiencia en generación de informes, reducción de tiempos.
+                </div>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <div class="contacto">
-            <p>📧 <a href="mailto:tucorreo@hotmail.com">tucorreo@hotmail.com</a></p>
-            <p>🔗 <a href="https://www.linkedin.com/in/tuperfil/" target="_blank">LinkedIn</a> | 
-               <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
-            <p>📊 Portafolio Power BI | Todos los derechos reservados © 2024</p>
+            <p>📧 <a href="mailto:edermoriel@hotmail.com">edermoriel@hotmail.com</a></p>
+            <p>📱 Teléfono: 0963156344</p>
+            <p>📍 Guayaquil, Ecuador</p>
+            <p>🔗 <a href="https://github.com/TUUSUARIO" target="_blank">GitHub</a> | 
+               <a href="https://www.linkedin.com/in/TU-LINKEDIN/" target="_blank">LinkedIn</a></p>
+            <p>📊 Portafolio Power BI | Eder Steven Moriel Perero © 2024</p>
         </div>
     </footer>
 </body>
